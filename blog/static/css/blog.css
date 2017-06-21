@@ -1,0 +1,15 @@
+.navbar {
+	border-radius: 0;
+}
+
+.page-header {
+	background-color: rgba(142, 10, 77, 0.8);
+	margin-bottom: 0px
+	/*border-color: red;
+	border-bottom: 200px;*/
+}
+
+#head {
+	color: #daf2fb;
+	background-color: transparent;
+}
