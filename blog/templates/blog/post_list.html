@@ -1,8 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<p>YO Yo yo what is up my good friend</p>
 	{% for post in posts %}
-		<div>
+		<div class = "post">
 			<h1><a href="">{{ post.title}}</a></h1>
 			<p>{{post.published_date}}</p>
 			<p>{{ post.text|linebreaksbr }}</p>

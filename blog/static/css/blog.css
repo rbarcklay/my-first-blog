@@ -1,15 +1,58 @@
 .navbar {
 	border-radius: 0;
+	background: #101010;
 }
 
 .page-header {
-	background-color: rgba(142, 10, 77, 0.8);
-	margin-bottom: 0px
-	/*border-color: red;
+	background-color: white;
+	border-bottom: thick solid gray;
+	margin-bottom: 0px;
+	/*
+	height: 10px;
 	border-bottom: 200px;*/
 }
 
-#head {
-	color: #daf2fb;
+.page-header h1 {
+	color: #333;
+	font-family: times;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.post {
+	background-color: white;
+	border-bottom: thin solid #777;
+	padding: 5px;
+	margin: 10px;
+	font-family: Helvetica Neue;
+}
+
+a {
+	color: #94b8cc;
+}
+
+.jumbotron {
+	background-color: rgba(206, 222, 230, 0.73);
+}
+
+.jumbotext {
+	text-align: center;
+}
+.center {
+	display: flex;
+    justify-content: center;
+}
+
+.btn {
+	margin: 10px;
+	border-color: #7a95a5;
 	background-color: transparent;
+}
+
+.btn:hover {
+	background-color: #7a95a5;
+}
+
+.display-3 {
+	font-family: lobster;
 }
