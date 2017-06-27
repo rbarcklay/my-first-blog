@@ -33,6 +33,8 @@ a {
 
 .jumbotron {
 	background-color: rgba(206, 222, 230, 0.73);
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 .jumbotext {
@@ -56,3 +58,8 @@ a {
 .display-3 {
 	font-family: lobster;
 }
+
+.navbar {
+	min-height: 50px;
+}
+
