@@ -1,3 +1,5 @@
+
+
 .navbar {
 	border-radius: 0;
 	background: #101010;
@@ -22,19 +24,32 @@
 .post {
 	background-color: white;
 	border-bottom: thin solid #777;
-	padding: 5px;
+	padding: 10px;
 	margin: 10px;
 	font-family: Helvetica Neue;
+	width: 100%;
+}
+
+.post:hover{
+	background-color: rgba(206, 222, 230, 0.1);
+	border-radius: 10px;
+	border: thin solid #7a95a5;
 }
 
 a {
+	color: #94b8cc
+}
+
+a:hover{
 	color: #94b8cc;
+	text-decoration: none;
 }
 
 .jumbotron {
-	background-color: rgba(206, 222, 230, 0.73);
+	background-color: rgba(206, 222, 230, .73);
 	padding-top: 100px;
 	padding-bottom: 50px;
+	margin:0px;
 }
 
 .jumbotext {
