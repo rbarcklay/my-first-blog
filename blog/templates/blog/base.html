@@ -14,31 +14,14 @@
             <a class="navbar-brand" href="#">Rachel Barcklay</a>
         </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="{% static 'pages/test.html' %}">About</a></li>
-                <li><a href="{% static 'BarcklayResumeCurrent.pdf' %}">Resume</a></li>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="{% static 'BarcklayResumeCurrent.pdf' %}" target="_blank">Resume</a></li>
                 <li><a href="#">Porfolio</a></li>
             </ul>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class=" jumbotext display-3">Rachel Barcklay</h1>
-            <p class="jumbotext lead">Harvey Mudd College | B.S. Physics - Expected 2020 </p>
-            <div class = "center">
-                <button type="button" class="btn" href="{% static 'pages/test.html' %}">About</button>
-                <button type="button" class="btn" href="{% static 'BarcklayResumeCurrent.pdf' %}">Resume</button>
-                <button type="button" class="btn">Portfolio</button>
-            </div>
-        </div>
-    </div>
-    <div class="content container-fluid">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                {% block content %}
-                {% endblock %}
-            </div>
-        </div>
-    </div>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>

@@ -1,12 +1,30 @@
 {% extends 'blog/base.html' %}
+{% load staticfiles %}
 {% block content %}
-	{% for post in posts %}
-		<div class = "post">
-			<h1><a href="">{{ post.title}}</a></h1>
-			<p>{{post.published_date}}</p>
-			<p>{{ post.text|linebreaksbr }}</p>
-		</div>
-	{% endfor %}
+	<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class=" jumbotext display-3">Rachel Barcklay</h1>
+            <p class="jumbotext lead">Harvey Mudd College | B.S. Physics - Expected 2020 </p>
+            <div class = "center">
+                <button type="button" class="btn" href="{% static 'pages/test.html' %}">About</button>
+                <button type="button" class="btn" href="{% static 'BarcklayResumeCurrent.pdf' %}">Resume</button>
+                <button type="button" class="btn">Portfolio</button>
+            </div>
+        </div>
+    </div>
+    <div class="content container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+				{% for post in posts %}
+					<div class = "post">
+						<h1><a href="">{{ post.title}}</a></h1>
+						<p>{{post.published_date}}</p>
+						<p>{{ post.text|linebreaksbr }}</p>
+					</div>
+				{% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 
